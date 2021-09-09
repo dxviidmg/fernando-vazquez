@@ -2,13 +2,13 @@ from utils import get_sample
 
 
 def calcula_comision(venta):
-    if 1000000 < venta <3000000:
+    if 1000000 <= venta <3000000:
         porcentaje_comision = 3
-    elif 3000000 < venta <5000000:
+    elif 3000000 <= venta <5000000:
         porcentaje_comision = 4
-    elif 5000000 < venta <7000000:
+    elif 5000000 <= venta <7000000:
         porcentaje_comision = 5
-    elif 7000000 < venta:
+    elif 7000000 <= venta:
         porcentaje_comision = 6
     else:
         porcentaje_comision = 0
