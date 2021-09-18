@@ -13,7 +13,7 @@ def main():
     elif tamaño == 2:
         costo_variable = 12
     elif tamaño == 3:
-        costo_variable = 6
+        costo_variable = 16
     else:
         main()
 

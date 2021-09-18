@@ -1,7 +1,7 @@
 def main():
     alumnos = [
         {
-            'Nombre': 'David', 
+            'Nombre': 'Juan', 
             'Sexo': 'M', 
             'Edad': 29, 
             'Peso': 69, 
@@ -10,7 +10,7 @@ def main():
             'Cabello': 1
         },
        {
-            'Nombre': 'Arely', 
+            'Nombre': 'Fernanda', 
             'Sexo': 'F', 
             'Edad': 29, 
             'Estatura': 1.70, 
@@ -18,7 +18,24 @@ def main():
             'Ojos': 1,
             'Cabello': 2
         },
-
+       {
+            'Nombre': 'Pedro', 
+            'Sexo': 'M', 
+            'Edad': 28, 
+            'Estatura': 1.75, 
+            'Peso': 75,
+            'Ojos': 2,
+            'Cabello': 1
+        },
+       {
+            'Nombre': 'Maria', 
+            'Sexo': 'F', 
+            'Edad': 25, 
+            'Estatura': 1.54, 
+            'Peso': 54,
+            'Ojos': 2,
+            'Cabello': 2
+        },
     ]
 
     lista_1 = []

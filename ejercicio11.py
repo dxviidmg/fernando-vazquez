@@ -9,7 +9,7 @@ def movimiento_saldo(saldo):
 
     if not tipo_movimiento in ['1', '2']:
         print('Error en seleccion de movimiento')
-        calcula_nuevo_saldo(saldo)
+        return movimiento_saldo(saldo)
 
     cantidad = float(input('Cantidad: '))
 
@@ -40,7 +40,7 @@ def main():
 
     print('Cuentahabiente', cuentahabiente)
     print('Saldo inicial', saldo_inicial)
-    print_table(movimientos, headers=['Movimiento', 'Deposito', 'Abono', 'Saldo'])
+    print_table(movimientos, headers=['Movimiento', 'Deposito', 'Retiro', 'Saldo'])
 
 
 if __name__ == "__main__":
