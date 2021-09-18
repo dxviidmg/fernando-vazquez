@@ -1,3 +1,4 @@
+
 def main():
     articulos = [
         {
@@ -30,6 +31,7 @@ def main():
 
     print('Total utilidad', total_utilidad)
     print('Total impuesto', total_impuesto)
-    print('Total precio venta', total_precio_venta)                        
+    print('Total precio venta', total_precio_venta)
 
+    
 main()
