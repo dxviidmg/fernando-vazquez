@@ -1,20 +1,6 @@
 from utils import print_table
 
 
-def calculo(articulos):
-    total_articulos = 0
-    total_costo_produccion = 0
-    for articulo in articulos:
-        costo_produccion = articulo['cantidad_producida'] * (articulo['factor_costo'] + articulo['costo_fijo'])
-        articulo['costo_produccion'] = costo_produccion
-        total_articulos += articulo['cantidad_producida']
-        total_costo_produccion += costo_produccion
-
-    articulos.append({'articulo': 'Total ' + str(total_articulos) + ' articulos', 'cantidad_producida': '', 'factor_costo': '','costo_fijo': '', 'costo_produccion': total_costo_produccion})
-
-    print_table(articulos, headers=['Articulo', 'Cantidad producida', 'Factor costo', 'Costo fijo', 'Costo produccion'])
-
-
 def input_articulos():
     articulos = []
 
@@ -38,6 +24,22 @@ def input_articulos():
         articulos.append(data)
 
     return articulos
+    
+def calculo(articulos):
+    total_articulos = 0
+    total_costo_produccion = 0
+    for articulo in articulos:
+        costo_produccion = articulo['cantidad_producida'] * (articulo['factor_costo'] + articulo['costo_fijo'])
+        articulo['costo_produccion'] = costo_produccion
+        total_articulos += articulo['cantidad_producida']
+        total_costo_produccion += costo_produccion
+
+    articulos.append({'articulo': 'Total ' + str(total_articulos) + ' articulos', 'cantidad_producida': '', 'factor_costo': '','costo_fijo': '', 'costo_produccion': total_costo_produccion})
+
+    print_table(articulos, headers=['Articulo', 'Cantidad producida', 'Factor costo', 'Costo fijo', 'Costo produccion'])
+
+
+
 
 def main():
     articulos = input_articulos()
