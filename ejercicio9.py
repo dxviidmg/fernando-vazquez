@@ -41,7 +41,7 @@ def calculo(articulos):
     print_table(articulos, headers=['Articulo', 'Cantidad', 'Precio unitario', 'Total'])
 
 
-def main():
+def get_reporte():
     cliente = input('Nombre: ')
 
     articulos = input_articulos()
@@ -49,4 +49,5 @@ def main():
     calculo(articulos)
 
 
-main()
+if __name__ == '__main__':
+    get_reporte()
