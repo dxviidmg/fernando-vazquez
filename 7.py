@@ -45,4 +45,5 @@ def main():
     articulos = input_articulos()
     calculo(articulos)
     
-main()
+if __name__ == "__main__":
+    main()

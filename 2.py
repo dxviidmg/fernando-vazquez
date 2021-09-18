@@ -30,4 +30,5 @@ def main():
     contador = contar_calificaciones(calificaciones)
     print('Contador', contador)
 
-main()
+if __name__ == "__main__":
+    main()

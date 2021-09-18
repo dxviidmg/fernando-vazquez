@@ -18,4 +18,5 @@ def main():
     dias_vividos = calcular_dias_vividos(nacimiento)
     print('dias_vividos', dias_vividos)
     
-main()
+if __name__ == "__main__":
+    main()

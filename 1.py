@@ -27,7 +27,8 @@ def main():
         comision, porcentaje_comision = calcula_comision(venta)
         print('Venta:', venta, '. %Comision:', porcentaje_comision, '. Comision', comision)
 
-main()
+if __name__ == "__main__":
+    main()
 
 
     

@@ -23,4 +23,5 @@ def main():
 
     print('Precio', precio_venta)
     
-main()
+if __name__ == "__main__":
+    main()

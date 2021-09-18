@@ -25,4 +25,5 @@ def suma_fibonacci():
 def main():
     suma_fibonacci()
 
-main()
+if __name__ == "__main__":
+    main()
