@@ -25,27 +25,13 @@ def input_articulos():
 
 
 def calculo(articulos):
-    subtotal = 0
-#    total_utilidad = 0
-#    total_impuesto = 0
-#    total_precio_venta = 0
-    
+    subtotal = 0    
     
     for articulo in articulos:
         precio_total = articulo['cantidad'] * articulo['precio_unitario']
         articulo['precio_total'] = precio_total
-#        impuesto = (utilidad + articulo['costo_produccion']) * 0.15
-#        precio_venta = utilidad + articulo['costo_produccion'] + impuesto
-        
-
-#        articulo['utilidad'] = utilidad
-#        articulo['impuesto'] = impuesto
-#        articulo['precio_venta'] = precio_venta
 
         subtotal += precio_total
-#        total_utilidad += utilidad
-#        total_impuesto += impuesto
-#        total_precio_venta += precio_venta
 
     impuesto = subtotal * 0.15
     total = subtotal + impuesto
@@ -56,7 +42,10 @@ def calculo(articulos):
 
 
 def main():
+    cliente = input('Nombre: ')
+
     articulos = input_articulos()
+    print('Nombre del cliente: ', cliente)
     calculo(articulos)
 
 
